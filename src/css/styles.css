@@ -63,165 +63,165 @@ a {
 }
 
 /*====================local changes====================*/
+.body {
+  font-family: "Montserrat", sans-serif;
+line-height: 1.5;
+letter-spacing: 0.04em;
 
-.timer-container {
-  padding-left: 156px;
-  display: flex;
- flex-wrap: wrap;
-  max-width: 355px;
 }
 
+.form-container {
+  width: 1128px;
+  margin: auto;
+display: flex;
+gap: 8px;
+padding-top: 36px;
+}
 
+.form {
+margin: auto;
+margin-bottom: 32px;
+}
 
-#datetime-picker {
-  box-sizing: border-box;
-  border: 1px solid #808080;
+.input {
   border-radius: 4px;
   width: 272px;
   height: 40px;
+  padding-left: 16px;
+  outline: none;
+}
+
+.input:hover {
+  border: 1px solid #4e75ff;;
+}
+
+.input:hover:placeholder-shown {
+  border: 1px solid #000;;
+}
+
+.input:placeholder-shown {
+  border: 1px solid #808080;;
+}
+
+button {
   font-family: "Montserrat", sans-serif;
-padding-left: 16px;
-margin-right: 8px;
-
-}
-
-
-span.flatpickr-day.selected:hover
-{
-  color: #666;
-  background-color: #c1c1c1;
-  border: none
-}
-
-
-
-#datetime-picker:hover {
-  border: 1px solid #000;
-}
-
-#datetime-picker:active {
-  border: 1px solid #4e75ff;
-}
-
-#datetime-picker:disabled {
-  border: 1px solid #808080;
-}
-
-
-.timer-container button {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #fff;
   background: #4e75ff;
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 75px;
+  width: 91px;
   height: 40px;
 }
-.timer-container button:hover,
-.snackbar-container button:hover  {
+button:hover {
   background-color: #6c8cff;
 }
 
-.timer-container button:disabled {
-  background-color: #cfcfcf;
-  color: #989898;
-}
-
-.timer {
+.ul-container {
+  width: 1128px;
+  margin: auto;
+  }
+ 
+.ul-gallery {
   display: flex;
   gap: 24px;
-  max-width: 346px;
+  flex-wrap: wrap;
 }
 
-.field {
+.li-gallery {
+  width: calc((100%-48)/3);
+  border: 1px solid #808080;
+  width: 360px;
+height: 200px;
+}
+
+.img {
+overflow: hidden;
+object-fit: cover;
+width: 360px;
+height: 152px;
+
+}
+
+.baner-info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+  justify-content: space-around;
 }
 
-.value {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.2;
+.baner-info-li {
+text-align: center;
+padding: 4px 0px;
+}
+
+.baner-info-li-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
   letter-spacing: 0.04em;
   color: #2e2f42;
-  text-transform: uppercase;
+
 }
 
-.label {
-  text-transform: uppercase;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
+.baner-info-li-text {
+  font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
 color: #2e2f42;
 }
 
 
-.snackbar-container {
-  padding-left: 156px;
-  display: flex;
- flex-wrap: wrap;
 
-}
-.snackbar-container button   {
-  font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #fff;
-background: #4e75ff;
-border: none;
-border-radius: 8px;
-padding: 8px 16px;
-width: 100%; 
-height: 40px;
-
-}
-
-.delay{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: flex-start;
-  align-items: flex-start;
-  gap: 8px;
-}
-.delay input {
-
-  padding-left: 10px;
-margin-bottom: 16px;
-width: 360px;
-height: 40px;
-border: 1px solid #808080;
-border-radius: 4px;
-}
-.delay input:hover {
-
-  border: 1px solid #4e75ff;
-}
-
-fieldset legend{
-  color: #2e2f42;
-text-align: start;
-}
-
-fieldset {
+.loader {
+  width: 175px;
+  height: 80px;
+  display: block;
+  margin:auto;
+  margin-bottom: 20px;
+  background-image: radial-gradient(circle 25px at 25px 25px, #d3d3e7 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #d3d3e7 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #d3d3e7 100%, transparent 0), linear-gradient(#d3d3e7 50px, transparent 0);
+  background-size: 50px 50px, 100px 76px, 50px 50px, 120px 40px;
+  background-position: 0px 30px, 37px 0px, 122px 30px, 25px 40px;
+  background-repeat: no-repeat;
+  position: relative;
   box-sizing: border-box;
-  width: 100%;
-  border-radius: 4px;
-  stroke-width: 1px;
-  stroke: #808080;
-  margin-bottom: 24px;
-  text-align: center;
-  margin-left: 0px;
-  padding: 14px 48px 8px 48px;
+}
+.loader::before {
+  content: '';  
+  left: 60px;
+  bottom: 18px;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #4e75ff;
+  background-image: radial-gradient(circle 8px at 18px 18px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 18px 0px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 0px 18px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 36px 18px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 18px 36px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 30px 30px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 5px 30px, #d3d3e7 100%, transparent 0), radial-gradient(circle 4px at 5px 5px, #d3d3e7 100%, transparent 0);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: rotationBack 3s linear infinite;
+}
+.loader::after {
+  content: '';  
+  left: 94px;
+  bottom: 15px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #4e75ff;
+  background-image: radial-gradient(circle 5px at 12px 12px, #d3d3e7 100%, transparent 0), radial-gradient(circle 2.5px at 12px 0px, #d3d3e7 100%, transparent 0), radial-gradient(circle 2.5px at 0px 12px, #d3d3e7 100%, transparent 0), radial-gradient(circle 2.5px at 24px 12px, #d3d3e7 100%, transparent 0), radial-gradient(circle 2.5px at 12px 24px, #d3d3e7 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, #d3d3e7 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, #FFF 100%, transparent 0), radial-gradient(circle 2.5px at 20px 20px, #d3d3e7 100%, transparent 0), radial-gradient(circle 2.5px at 3px 20px, #d3d3e7 100%, transparent 0), radial-gradient(circle 2.5px at 3px 3px, #d3d3e7 100%, transparent 0);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: rotationBack 4s linear infinite reverse;
 }
 
-.fulfilled {
-  margin-right: 48px;
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
+
+
