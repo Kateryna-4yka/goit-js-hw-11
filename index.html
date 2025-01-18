@@ -13,10 +13,12 @@
     referrerpolicy="no-referrer"
   />
     <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-DSXr0ofp.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-5ObWk2rO.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-DpsVOPnS.css">
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="nav">
           <ul class="nav-list">
@@ -29,10 +31,27 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
     
 
-    <main></main>
+    <main>
+      <div class="form-container">
+      <form class="form">
+        <input class="input" type="text" name="user_request" placeholder="Search images..." required>
+        <button class="button" type="submit">Search</button>
+      </form>
+      </div>
+      <span class="loader visually-hidden"></span>
+
+      <div class="ul-container">
+      <ul class="ul-gallery">
+
+       
+      </ul>
+
+    </div>
+
+    </main>
 
   </body>
 </html>
