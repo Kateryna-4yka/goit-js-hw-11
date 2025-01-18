@@ -1,7 +1,15 @@
 // У файлі pixabay-api.js зберігай функції для HTTP-запитів.
 
 export function nttpRequest (userRequest) {
-    return fetch (`https://pixabay.com/api/?q=${userRequest}&key=48292121-37734ba9461bf6417934fa015&image_type=photo&orientation=horizontal&safesearch=true`)
+    const paramsForHttp = new URLSearchParams ({
+        q: userRequest,
+        key: `48292121-37734ba9461bf6417934fa015`,
+        image_type: `photo`, 
+        orientation: `horizontal`,
+        safesearch : true,
+
+    })
+    return fetch (`https://pixabay.com/api/?${paramsForHttp}`)
 
     //обробляємо відповідь що прийшла 
     .then (queryResult=>{
